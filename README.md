@@ -24,11 +24,13 @@ RDAMP-Dimensional-Model-PowerBI/
 |  |__schema_diagram.png
 |__README.md
 ```
-# 🛠️ Tools Used for Project
-## Datasets
+# Datasets Used for Project
 - Carlton_Francis_ACE Superstore Retail_cleaned.csv
 - Carlton_Francis_sales staging_cleaned.csv
+- Columns used for sales staging table: [Order ID], [Order Date], [Year], [Quarter], [Month], [Month_Number], [Day], [Order Mode], [Customer ID], [City], [Postal Code], [Product ID], [Product Name], [Category], [Sub-Category], [Total_Sales], [Cost Price], [Country],     
+                                        [Region], [Gross_Profit_perUnit], [Total_Cost], [Total_Discount], [Total_Revenue], [Total_Units_Sold], [Profit_Margin], [Profit_perUnit], [Segment]
 - Carlton_Francis_Items with negative Cost Price_Flagged.csv - I created this file as I believe it would be important to ascertain the reason for the negative values. These values, I believe would affect my analysis.
+# 🛠️ Tools Used for Project
 ## Cleaning tools
 -  Excel
 ## SQL query tools
