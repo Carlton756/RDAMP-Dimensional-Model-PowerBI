@@ -51,7 +51,7 @@ The first step in this project was to create a star schema structure which compr
   -  product_dim
 -  Creation of views tables
 ## 🌟 Star Schema screenshot
-[Star Schema](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/7e47609a72bf00cd780fd3b891a0e3046e0fe3a1/Carlton_Francis_Dimensional%20Modeling%20Star%20Schema.png)
+-	[Star Schema](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/7e47609a72bf00cd780fd3b891a0e3046e0fe3a1/Carlton_Francis_Dimensional%20Modeling%20Star%20Schema.png)
 # Schema Explained
 | Name of Table | Type | Information |
 |---------------|------|-------------|
@@ -63,7 +63,7 @@ The first step in this project was to create a star schema structure which compr
 | date_dim      | Dimension | Contains date information in the form of short date, day, month, quarter, month_number and year for when order was made |
 # Table Creation Process
 ## Sales Staging Table Creation
-[Staging table creation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/09e2d283c20c0f9b28d6f981f193e3919f74357e/Carlton_Francis_creation%20of%20sale%20staging%20table%20screenshot/Created%20sales%20staging%20table.png)
+-	[Staging table creation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/09e2d283c20c0f9b28d6f981f193e3919f74357e/Carlton_Francis_creation%20of%20sale%20staging%20table%20screenshot/Created%20sales%20staging%20table.png)
 I created a staging table (Carlton_Francis_sales staging_cleaned.csv) from the Carlton_Francis_ACE Superstore Retail_cleaned.csv file using excel. I then created the staging table using the following query:
 ```
 -- Creating Sales_Fact table
@@ -98,7 +98,7 @@ I created the following tables within PostgreSQL:
 -  location_dim
 -  channel_dim
 -  date_dim
-[Dimension table creation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/cf1ef2adbaabaa135baac47d940ae2a897ee1cf4/Carlton_Francis_dim%20table%20creation%20screenshot/Creation%20of%20dimension%20tables.png)
+-	[Dimension table creation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/cf1ef2adbaabaa135baac47d940ae2a897ee1cf4/Carlton_Francis_dim%20table%20creation%20screenshot/Creation%20of%20dimension%20tables.png)
 See the following codes:
 ```
 --Creating Dimension tables
@@ -143,7 +143,7 @@ create table Channel_Dim(
 ## Fact Table Creation
 I created the following fact table:
 -  sales_fact
-[Fact table creation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/05d155d9b43faae49bcc4be65d6970b79ee798e8/Carlton_Francis_Creation%20of%20sales_fact%20table.png)
+-	[Fact table creation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/05d155d9b43faae49bcc4be65d6970b79ee798e8/Carlton_Francis_Creation%20of%20sales_fact%20table.png)
 See the following code:
 ```
 -- Creating Sales_Fact table
@@ -172,7 +172,7 @@ foreign key (Postal_Code) references Location_Dim(Postal_Code)
 ```
 # Table Population
 ## Sale Fact Table Population
-[Sales Fact Table Population](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/2af687316a475c99ab54d5d97c9b717ad6a47eba/Carlton_Francis_population%20of%20fact%20and%20dim%20table%20screenshots/Insert%20into%20sale_fact%20table.png)
+-	[Sales Fact Table Population](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/2af687316a475c99ab54d5d97c9b717ad6a47eba/Carlton_Francis_population%20of%20fact%20and%20dim%20table%20screenshots/Insert%20into%20sale_fact%20table.png)
 See the following code used for population:
 ```
 -- Insertion of data into sales_fact table
@@ -214,7 +214,7 @@ select *
 from sales_fact;
 ```
 ## Dimension Tables Population
-[Dimension Tables Deduplication and Population Queries](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/ba6ad15eef4d29e151ee9ab79a7d97f782c8c4b9/Carlton_Francis_population%20of%20fact%20and%20dim%20table%20screenshots)
+-	[Dimension Tables Deduplication and Population Queries](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/ba6ad15eef4d29e151ee9ab79a7d97f782c8c4b9/Carlton_Francis_population%20of%20fact%20and%20dim%20table%20screenshots)
 # Views and Reusable Query Creation
 ## Views Creation
 The view tables that were created speaks to the following insights that will be highlighted within the upcoming visualizations:
@@ -223,7 +223,7 @@ The view tables that were created speaks to the following insights that will be 
 3.	vw_customer_order_patterns: Average order value, frequency, and profit per customer segment
 4.	vw_channel_margin_report: Profitability comparison across online vs in-store
 5.	vw_region_category_rankings: Rank categories by profit margin per region
-[Views Creation Queries](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/5d9b68205d4d73f96f61b92ef508bd869edc12be/Carlton_Francis_created%20views%20screenshots)
+-	[Views Creation Queries](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/5d9b68205d4d73f96f61b92ef508bd869edc12be/Carlton_Francis_created%20views%20screenshots)
 See the following codes:
 ```
 -- Creating vw_channel_margin_report
@@ -315,6 +315,9 @@ This project includes 5 reusable SQL queries (outside of view) that:
 -	[Overall top 10 revenue generated by product and region](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/58238f73ae1b95b9b609f384fe6db59cf26c3534/Carlton_Francis_reusable%20sql%20queries%20screenshots/Overall%20top%2010%20revenue%20generated%20by%20product%20and%20region.png)
 -	[Total gross profit by channel](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/f1513310d59cafb19af452509389d43111c07a93/Carlton_Francis_reusable%20sql%20queries%20screenshots/Total%20gross%20profit%20by%20channel.png)
 -	[Total orders made by year and quarter](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/0f260d3dd049690b05e0f2bf393a711f09c8085e/Carlton_Francis_reusable%20sql%20queries%20screenshots/Total%20orders%20made%20by%20year%20and%20quarter.png)
+# 📊 Power BI Visualization
+1.	Connected PostgreSQL to Power BI and imported fact and dimention tables along with views tables
+2.	Generated dashboards by utlilizing information from fact and dimension tables via star schema relationship
 
 
 
