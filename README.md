@@ -41,8 +41,8 @@ RDAMP-Dimensional-Model-PowerBI/
 # Cleaning Process Using Excel
 From the Carlton_Francis_ACE Superstore Retail_cleaned.csv file from TASK1, I created a seperate table (Carlton_Francis_Items with negative Cost Price_Flagged.csv) which contained flagged data. I then removed all the data that made up the flagged dataset from the Carlton_Francis_ACE Superstore Retail_cleaned.csv file to create the Carlton_Francis_sales staging_cleaned.csv file. The data that made up the flagged dataset was made up of rows where Cost Price and Sales had negative values. I took this approach as I believed this would affect my analysis going forward. My appraoch is to ascertain from the business the reason for the negative Cost Price values.
 # ⭐ Star Schema Overview
-The first step in this project was to create a star schema structure which comprised of the following:
--  Creation of a single sales_fact table which comprised of all the sales metrics that would support the creation of dimension tables
+The first step in this project was to create a database within PostgreSQL and star schema structure which comprised of the following:
+-  Creation of a single sales_fact table which contained all the sales metrics that would support the creation of dimension tables
 -  Creation 5 dimension tables, which would support our sales_fact table. The dimension tables are as follows:
   -  channel_dim
   -  customer_dim
@@ -50,6 +50,21 @@ The first step in this project was to create a star schema structure which compr
   -  location_dim
   -  product_dim
 -  Creation of views tables
+
+# Database creation
+Created a database to house the component of my model using PostgreSQL. See code used to create database:
+```
+-- creation of database: rdamptask2;
+
+CREATE DATABASE rdamptask2
+```
+## VS Code Studio connection to PostgreSQL
+Throughout this project, I endevoured to use the opportunity to learn how to use VS Code Studio in tandem with PostgresQL. I had prior used VS Code Studio to as a SQL editor. In order to connect it to PostgreSQL i downloaded to extensions:
+-	SQLTools PostgreSQL/Cockroach Driver
+-	SQLTools
+These two extension enabled me to connect VS Code Studio with PostgreSQL.
+
+-	See screenshot of my established connect between VS Code Studio and PostgreSQL
 ## 🌟 Star Schema screenshot
 -	![Star Schema](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/7e47609a72bf00cd780fd3b891a0e3046e0fe3a1/Carlton_Francis_Dimensional%20Modeling%20Star%20Schema.png)
 # Schema Explained
@@ -323,7 +338,7 @@ This project includes 5 reusable SQL queries (outside of view) that:
 ![Total gross profit by channel](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/f1513310d59cafb19af452509389d43111c07a93/Carlton_Francis_reusable%20sql%20queries%20screenshots/Total%20gross%20profit%20by%20channel.png)
 ![Total orders made by year and quarter](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/0f260d3dd049690b05e0f2bf393a711f09c8085e/Carlton_Francis_reusable%20sql%20queries%20screenshots/Total%20orders%20made%20by%20year%20and%20quarter.png)
 # 📊 Power BI Visualization
-1.	Connected PostgreSQL to Power BI and imported fact and dimention tables along with views tables
+1.	Connected PostgreSQL to Power BI and imported fact and dimention tables along with views tables - As Power BI is able to get data from many sources, I imported the fact, dimension and views tables by clicking on the PostgreSQL database source under Get data tab and connected Power BI to my PostgrSQL server and the database (rdamptask2 database), I created initially that housed the created tables.
 2.	Generated dashboards by utlilizing information from fact and dimension tables via star schema relationship
 -	[Explore Power BI Dashboard for Insights](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/7e2da2174c01c2527a463feaf017257776f51243/Carlton_Francis_Dimensional%20Modeling-SQL%20Transformation-Power%20BI-Reporting.pbix)
 ## Power BI Visualization Screenshots
