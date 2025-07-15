@@ -56,10 +56,9 @@ The first step in this project was to create a star schema structure which compr
 | Name of Table | Type | Information |
 |---------------|------|-------------|
 | sales_fact    | Fact | sales metrics|
-|               |      |              |
-| location_dim  | Dimension |         |
-| product_dim   | Dimension |         |
-| channel_dim   | Dimension |         |
-| customer_dim  | Dimension |         |
-| date_dim      | Dimension |         |
+| location_dim  | Dimension | Contains city, country, postal code and region information where each sale was made |
+| product_dim   | Dimension | Contains category, product id, product name, segment, sub-category and total cost of product information |
+| channel_dim   | Dimension | Contains order mode information, whether the order was made online or in-store |
+| customer_dim  | Dimension | Contains customer id information, city, postal code, region and country where sale was made |
+| date_dim      | Dimension | Contains date information in the form of short date, day, month, quarter, month_number and year for when order was made |
 
