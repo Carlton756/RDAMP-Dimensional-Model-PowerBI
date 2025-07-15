@@ -63,8 +63,8 @@ The first step in this project was to create a star schema structure which compr
 | date_dim      | Dimension | Contains date information in the form of short date, day, month, quarter, month_number and year for when order was made |
 # Table Creation Process
 ## Sales Staging Table Creation
-I created a staging table (Carlton_Francis_sales staging_cleaned.csv) from the Carlton_Francis_ACE Superstore Retail_cleaned.csv file using excel. I then created the staging table using the following query:
 [Staging table creation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/09e2d283c20c0f9b28d6f981f193e3919f74357e/Carlton_Francis_creation%20of%20sale%20staging%20table%20screenshot/Created%20sales%20staging%20table.png)
+I created a staging table (Carlton_Francis_sales staging_cleaned.csv) from the Carlton_Francis_ACE Superstore Retail_cleaned.csv file using excel. I then created the staging table using the following query:
 ```
 -- Creating Sales_Fact table
 create table Sales_Fact(
@@ -98,6 +98,51 @@ I created the following tables within PostgreSQL:
 -  location_dim
 -  channel_dim
 -  date_dim
-[Dimension table creation](
+[Dimension table creation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/cf1ef2adbaabaa135baac47d940ae2a897ee1cf4/Carlton_Francis_dim%20table%20creation%20screenshot/Creation%20of%20dimension%20tables.png)
+See the following codes:
+```
+--Creating Dimension tables
+-- Creating Poduct_Dim table
+CREATE TABLE Product_Dim (
+    Product_ID VARCHAR(255) PRIMARY KEY,
+    Product_Name VARCHAR(255),
+    Category VARCHAR(100),
+	Sub_Category VARCHAR(100),
+	Segment VARCHAR(100),
+	Total_Cost DECIMAL(10,2)
+	);
+-- Creating Customer_Dim table
+create table Customer_Dim(
+	Customer_ID VARCHAR(255) PRIMARY KEY,
+	Country VARCHAR(255),
+	Region VARCHAR(255),
+	City VARCHAR (255),
+	Postal_Code VARCHAR(255)
+);
+-- Creating Location_Dim table
+create table Location_Dim(
+	Postal_Code VARCHAR(255) PRIMARY KEY,
+	Country VARCHAR(255),
+	Region VARCHAR(255),
+	City VARCHAR (255)
+	);
+-- Creating Date_Dim table
+create table Date_Dim(
+	Date Date primary key,
+	Year int,
+	Quarter VARCHAR(255),
+	Month VARCHAR(255),
+	Month_Number int,
+	Day int
+);
+-- Creating Channel_Dim table
+create table Channel_Dim(
+	Order_Mode VARCHAR(255) primary key
+);
+```
+## Fact Table Creation
+I created the following fact table:
+-  sales_fact
+[Fact table creation](
 
 
