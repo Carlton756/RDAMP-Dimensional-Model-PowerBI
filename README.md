@@ -49,6 +49,9 @@ The first step in this project was to create a star schema structure which compr
   -  date_dim
   -  location_dim
   -  product_dim
+-  Creation of views tables
+## Star Schema screenshot
+[image!](
     
 
 
