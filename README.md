@@ -349,14 +349,14 @@ This project includes 5 reusable SQL queries (outside of view) that:
 - ![Top 10 revenue influencers by product and overall gross profit by channel](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/aef1cf16ff84d93ef3abfe612ec238fefa783c85/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Reusable%20query%20insight%202.png)
 # Summary of insights and Recommendations
 ## Insight 1
--	Total profit generated per Unit = 196.80K GBP
--	Total sales generated = 293.87K GBP
--	Total revenue generated = 3.10M GBP
+- Total profit generated per Unit = 196.80K GBP
+- Total sales generated = 293.87K GBP
+- Total revenue generated = 3.10M GBP
 - Profit and discount correlation revealed a steady decline in profit as discount decreased with only one major outlier. The outlier identified was when discount was 0, there was a large value in the profit (18592 GBP) acquired by the company.
 - Product and seasonality figures revealed that products such as compact dishwashers, electric bikes and portable solar generators sold very when and generated high revenue and profit gain which increased in 2024 when compared to 2023.
 ### Recommendations
--	The accumulated sum of discounts generated a higher profit value overall than that of the profit acquired as a result of 0 discount. ACE should continue to implement their discount system and even find ways to improve the system as coustomers value discounts.
--	Revisit the products that customers purchase the most and see how the discount system can capitalize on those items.
+- The accumulated sum of discounts generated a higher profit value overall than that of the profit acquired as a result of 0 discount. ACE should continue to implement their discount system and even find ways to improve the system as coustomers value discounts.
+- Revisit the products that customers purchase the most and see how the discount system can capitalize on those items.
 ## Insight 2
 - East Midlands ((1206 GBP))ranked number 1 in profit margin by region with Wales (91 GBP) ranked 12th out of the 12 regions
 - Food (3596 GBP) ranked 1st in profit margin by category with Grooming (1 GBP) ranked at the bottom
@@ -367,8 +367,13 @@ This project includes 5 reusable SQL queries (outside of view) that:
 - Seek to combine high order frequency products with high margin products to improve profit figures
 - Implement customer appreciation programs that target valuable customers that make frequent purchases
 ## Insight 3
--
- 
+- The was an increase in the number of products ordered in 2024 (5231 products)compared to 2023 (4356 products) - 20% increase. This trend was also reflected in quarter figures
+- I would like to highlight that while cleaning the initial dataset, I removed 42 rows of records that had negative cost price values. This would have drastically affected my analysis. I would venture to ascertain from the business the reason for the negative values and then reincorporate these records for future analysis
+### Recommendations
+- Examine areas that contributed to increase in product orders and increase promotional support
+- Apply ML techniques to perform predictive algorithms on specific areas of sales. This method would assist ACE in forcasting future growth
+- Establish with finace department the cause of the negative cost price values - Root Cause Analysis
+- Maintain an optimized and scalable business intelligence model which is able to accommodate reintroduction of the flagged data when and future data
 
 
 
