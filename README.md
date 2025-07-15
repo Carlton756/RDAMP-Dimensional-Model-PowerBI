@@ -55,8 +55,11 @@ The first step in this project was to create a star schema structure which compr
 # Schema Explained
 | Name of Table | Type | Information |
 |---------------|------|-------------|
-| sales_fact    | fact | sales metrics|
+| sales_fact    | Fact | sales metrics|
 |               |      |              |
-|               |      |     
-
+| location_dim  | Dimension |         |
+| product_dim   | Dimension |         |
+| channel_dim   | Dimension |         |
+| customer_dim  | Dimension |         |
+| date_dim      | Dimension |         |
 
