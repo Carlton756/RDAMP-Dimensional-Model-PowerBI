@@ -50,8 +50,11 @@ The first step in this project was to create a star schema structure which compr
   -  location_dim
   -  product_dim
 -  Creation of views tables
-## Star Schema screenshot
-[Satr Schema](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/7e47609a72bf00cd780fd3b891a0e3046e0fe3a1/Carlton_Francis_Dimensional%20Modeling%20Star%20Schema.png)
+## 🌟 Star Schema screenshot
+[Star Schema](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/7e47609a72bf00cd780fd3b891a0e3046e0fe3a1/Carlton_Francis_Dimensional%20Modeling%20Star%20Schema.png)
+# Schema Explained
+| Name of Table | Type | Information |
+|---------------|------|-------------|
     
 
 
