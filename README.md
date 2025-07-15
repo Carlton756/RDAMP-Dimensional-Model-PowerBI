@@ -59,12 +59,12 @@ Created a database to house the component of my model using PostgreSQL. See code
 CREATE DATABASE rdamptask2
 ```
 ## VS Code Studio connection to PostgreSQL
-Throughout this project, I endevoured to use the opportunity to learn how to use VS Code Studio in tandem with PostgresQL. I had prior used VS Code Studio to as a SQL editor. In order to connect it to PostgreSQL i downloaded to extensions:
+Throughout this project, I endevoured to use the opportunity to learn how to use VS Code Studio in tandem with PostgresQL. I had prior used VS Code Studio to as a SQL editor. In order to connect VS Code Studio to PostgreSQL I downloaded the following extensions:
 -	SQLTools PostgreSQL/Cockroach Driver
 -	SQLTools
-These two extension enabled me to connect VS Code Studio with PostgreSQL.
-
--	See screenshot of my established connect between VS Code Studio and PostgreSQL
+#### _____________________________________________________________________________________________________________________________________
+See screenshot of my established connection between VS Code Studio and PostgreSQL:
+-	![image](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/98283d7e12dc478db83f42c9765c6b2324c5e9c7/VS%20Code%20Studio-PostgreSQL%20connection.png)
 ## 🌟 Star Schema screenshot
 -	![Star Schema](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/7e47609a72bf00cd780fd3b891a0e3046e0fe3a1/Carlton_Francis_Dimensional%20Modeling%20Star%20Schema.png)
 # Schema Explained
@@ -246,7 +246,7 @@ The view tables that were created speaks to the following insights that will be 
 4.	vw_channel_margin_report: Profitability comparison across online vs in-store
 5.	vw_region_category_rankings: Rank categories by profit margin per region
 -	[Views Creation Queries](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/5d9b68205d4d73f96f61b92ef508bd869edc12be/Carlton_Francis_created%20views%20screenshots)
-See the following codes:
+#### See the following codes:
 ```
 -- Creating vw_channel_margin_report
 create view vw_channel_margin_report as
