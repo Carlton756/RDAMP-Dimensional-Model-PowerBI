@@ -24,7 +24,18 @@ RDAMP-Dimensional-Model-PowerBI/
 |  |__schema_diagram.png
 |__README.md
 ```
-# :tool: Tools Used for Project
+# 🛠️ Tools Used for Project
+## Datasets
+- Carlton_Francis_ACE Superstore Retail_cleaned.csv
+- Carlton_Francis_sales staging_cleaned.csv
+- Carlton_Francis_Items with negative Cost Price_Flagged.csv - I created this file as I believe it would be important to ascertain the reason for the negative values. These values, I believe would affect my analysis.
+## Cleaning tools
+-  Excel
+## SQL query tools
+-  PostgreSQL
+-  VS Code Studio
+## Business Intelligence tools
+-  Power BI
 
 
 
