@@ -7,6 +7,7 @@ trends along with recommendations for improvement.
 Going a step further this leg of the project is geared towards designing a demensional model that is usable and scalable. This model should be one that business users can use to analyze performance from mmultiple angles
 and in a format that is optimized for enterprise-grade reporting.
 # Sturcture of Project
+```
 RDAMP-Dimensional-Model-PowerBI/
 |--- sql/
 |    |---
