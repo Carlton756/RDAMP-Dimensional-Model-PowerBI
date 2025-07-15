@@ -143,6 +143,77 @@ create table Channel_Dim(
 ## Fact Table Creation
 I created the following fact table:
 -  sales_fact
-[Fact table creation](
+[Fact table creation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/05d155d9b43faae49bcc4be65d6970b79ee798e8/Carlton_Francis_Creation%20of%20sales_fact%20table.png)
+See the following code:
+```
+-- Creating Sales_Fact table
+create table Sales_Fact(
+Order_ID VARCHAR(255) not null primary key,
+Date Date not null,
+Product_ID VARCHAR(255) not null,
+Customer_ID VARCHAR(255) not null,
+Total_Sales Decimal(10,2),
+Cost_Price Decimal(10,2),
+Gross_Profit_perUnit Decimal(10,2),
+Total_Cost Decimal(10,2),
+Total_Discount Decimal(10,2),
+Total_Revenue Decimal(10,2),
+Total_Units_Sold int,
+Profit_Margin Decimal(10,2),
+Profit_perUnit Decimal(10,2),
+Order_Mode VARCHAR(255) not null,
+Postal_Code VARCHAR(255) not null,
+foreign key (Product_ID) references Product_Dim(Product_ID),
+foreign key (Customer_ID) references Customer_Dim(Customer_ID),
+foreign key (Date) references Date_Dim(Date),
+foreign key (Order_Mode) references Channel_Dim(Order_Mode),
+foreign key (Postal_Code) references Location_Dim(Postal_Code)
+);
+```
+# Table Population
+## Sale Fact Table Population
+[Sales Fact Table Population](
+See the following code used for population:
+```
+-- Insertion of data into sales_fact table
+insert into sales_fact (
+    Order_ID,
+    Date,
+    Product_ID,
+    Customer_ID,
+    Total_Sales,
+    Cost_Price,
+    Gross_Profit_perUnit,
+    Total_Cost,
+    Total_Discount,
+    Total_Revenue,
+    Total_Units_Sold,
+    Profit_Margin,
+    Profit_perUnit,
+	Order_Mode,
+	Postal_Code
+) 
+select 
+    Order_ID,
+    Date,
+    Product_ID,
+    Customer_ID,
+    Total_Sales,
+    Cost_Price,
+    Gross_Profit_perUnit,
+    Total_Cost,
+    Total_Discount,
+    Total_Revenue,
+    Total_Units_Sold,
+    Profit_Margin,
+    Profit_perUnit,
+    Order_Mode,
+    Postal_Code
+from sales_staging;
+select *
+from sales_fact;
+
+
+
 
 
