@@ -318,7 +318,13 @@ This project includes 5 reusable SQL queries (outside of view) that:
 # 📊 Power BI Visualization
 1.	Connected PostgreSQL to Power BI and imported fact and dimention tables along with views tables
 2.	Generated dashboards by utlilizing information from fact and dimension tables via star schema relationship
--	[Explore Power BI Dashboard for Insights](https://app.powerbi.com/groups/me/reports/51a35bce-9120-4c47-9f1c-0148183e8805/9fe15b6b222f509be22c?experience=power-bi)
+-	[Explore Power BI Dashboard for Insights](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/7e2da2174c01c2527a463feaf017257776f51243/Carlton_Francis_Dimensional%20Modeling-SQL%20Transformation-Power%20BI-Reporting.pbix)
+## Power BI Visualization Screenshots
+- ![Produ(ct seasonality trends and profit versus discount correlation]
+- ![Profit contributors, category ranking by profit margin and region, and value of order by channel and segment](
+- ![Order count by year and quarter](
+- ![Discounts by channel, year, and quareter](
+- ![Top 10 revenue influencers by product and overall gross profit by channel](
 
 
 
