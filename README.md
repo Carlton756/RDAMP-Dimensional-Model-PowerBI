@@ -318,7 +318,7 @@ This project includes 5 reusable SQL queries (outside of view) that:
 # 📊 Power BI Visualization
 1.	Connected PostgreSQL to Power BI and imported fact and dimention tables along with views tables
 2.	Generated dashboards by utlilizing information from fact and dimension tables via star schema relationship
--	[Explore Power BI Dashboard for Insights](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/00686e092137a861bea8bf492b77cebe6b8d093e/Carlton_Francis_Dimensional%20Modeling-SQL%20Transformation-Power%20BI-Reporting.pbix)
+-	[Explore Power BI Dashboard for Insights](https://app.powerbi.com/groups/me/reports/51a35bce-9120-4c47-9f1c-0148183e8805/9fe15b6b222f509be22c?experience=power-bi)
 
 
 
