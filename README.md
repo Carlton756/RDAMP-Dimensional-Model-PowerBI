@@ -34,10 +34,21 @@ RDAMP-Dimensional-Model-PowerBI/
 ## Cleaning tools
 -  Excel
 ## SQL query tools
--  PostgreSQL
--  VS Code Studio
+-  PostgreSQL - For creating sql views and reusable queries
+-  VS Code Studio - Connecting to PostgreSQL (This gave me hands on experience in how both VS Code Studio and PostgreSQL can work in tandem as use of both platforms was new to me)
 ## Business Intelligence tools
--  Power BI
-
+-  Power BI - For visualization of intelligence reporting insights through interactive dashboards
+# Cleaning Process Using Excel
+From the Carlton_Francis_ACE Superstore Retail_cleaned.csv file from TASK1, I created a seperate table (Carlton_Francis_Items with negative Cost Price_Flagged.csv) which contained flagged data. I then removed all the data that made up the flagged dataset from the Carlton_Francis_ACE Superstore Retail_cleaned.csv file to create the Carlton_Francis_sales staging_cleaned.csv file. The data that made up the flagged dataset was made up of rows where Cost Price and Sales had negative values. I took this approach as I believed this would affect my analysis going forward. My appraoch is to ascertain from the business the reason for the negative Cost Price values.
+# ⭐ Star Schema Overview
+The first step in this project was to create a star schema structure which comprised of the following:
+-  Creation of a single sales_fact table which comprised of all the sales metrics that would support the creation of dimension tables
+-  Creation 5 dimension tables, which would support our sales_fact table. The dimension tables are as follows:
+  -  channel_dim
+  -  customer_dim
+  -  date_dim
+  -  location_dim
+  -  product_dim
+    
 
 
