@@ -55,10 +55,39 @@ The first step in this project was to create a star schema structure which compr
 # Schema Explained
 | Name of Table | Type | Information |
 |---------------|------|-------------|
-| sales_fact    | Fact | sales metrics|
+| sales_fact    | Fact | Contains sales metrics|
 | location_dim  | Dimension | Contains city, country, postal code and region information where each sale was made |
 | product_dim   | Dimension | Contains category, product id, product name, segment, sub-category and total cost of product information |
 | channel_dim   | Dimension | Contains order mode information, whether the order was made online or in-store |
 | customer_dim  | Dimension | Contains customer id information, city, postal code, region and country where sale was made |
 | date_dim      | Dimension | Contains date information in the form of short date, day, month, quarter, month_number and year for when order was made |
+# Table Creation Process
+I created a staging table (Carlton_Francis_sales staging_cleaned.csv) from the Carlton_Francis_ACE Superstore Retail_cleaned.csv file using excel. I then created the staging table using the following query:
+
+```
+-- Creating Sales_Fact table
+create table Sales_Fact(
+Order_ID VARCHAR(255) not null primary key,
+Date Date not null,
+Product_ID VARCHAR(255) not null,
+Customer_ID VARCHAR(255) not null,
+Total_Sales Decimal(10,2),
+Cost_Price Decimal(10,2),
+Gross_Profit_perUnit Decimal(10,2),
+Total_Cost Decimal(10,2),
+Total_Discount Decimal(10,2),
+Total_Revenue Decimal(10,2),
+Total_Units_Sold int,
+Profit_Margin Decimal(10,2),
+Profit_perUnit Decimal(10,2),
+Order_Mode VARCHAR(255) not null,
+Postal_Code VARCHAR(255) not null,
+foreign key (Product_ID) references Product_Dim(Product_ID),
+foreign key (Customer_ID) references Customer_Dim(Customer_ID),
+foreign key (Date) references Date_Dim(Date),
+foreign key (Order_Mode) references Channel_Dim(Order_Mode),
+foreign key (Postal_Code) references Location_Dim(Postal_Code)
+);
+```
+
 
