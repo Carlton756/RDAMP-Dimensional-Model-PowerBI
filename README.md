@@ -9,6 +9,6 @@ and in a format that is optimized for enterprise-grade reporting.
 # Sturcture of Project
 ```
 RDAMP-Dimensional-Model-PowerBI/
-|--- sql/
-|    |---
+|___ sql/
+|    |_____
 
