@@ -63,7 +63,7 @@ The first step in this project was to create a star schema structure which compr
 | date_dim      | Dimension | Contains date information in the form of short date, day, month, quarter, month_number and year for when order was made |
 # Table Creation Process
 I created a staging table (Carlton_Francis_sales staging_cleaned.csv) from the Carlton_Francis_ACE Superstore Retail_cleaned.csv file using excel. I then created the staging table using the following query:
-
+[Staging table creation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/09e2d283c20c0f9b28d6f981f193e3919f74357e/Carlton_Francis_creation%20of%20sale%20staging%20table%20screenshot)
 ```
 -- Creating Sales_Fact table
 create table Sales_Fact(
