@@ -214,7 +214,19 @@ select *
 from sales_fact;
 ```
 ## Dimension Tables Population
-[Dimension Tables Population](
+[Dimension Tables Population](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/ba6ad15eef4d29e151ee9ab79a7d97f782c8c4b9/Carlton_Francis_population%20of%20fact%20and%20dim%20table%20screenshots)
+# Views and Reusable Query Creation
+## Views Creation
+The view tables that were created speaks to the following insights that will be highlighted within the upcoming visualizations:
+1.	vw_product_seasonality: Product performance trends over time
+2.	vw_discount_impact_analysis: Correlation between discounts and profits
+3.	vw_customer_order_patterns: Average order value, frequency, and profit per customer segment
+4.	vw_channel_margin_report: Profitability comparison across online vs in-store
+5.	vw_region_category_rankings: Rank categories by profit margin per region
+[Views Creation Queries](
+
+
+
 
 
 
