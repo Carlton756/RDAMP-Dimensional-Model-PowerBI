@@ -9,6 +9,20 @@ and in a format that is optimized for enterprise-grade reporting.
 # Sturcture of Project
 ```
 RDAMP-Dimensional-Model-PowerBI/
-|___ sql/
-|    |_____
+|__sql/
+|  |__create_database.sql
+|  |__create_fact_and_dim_tables.sql
+|  |__populate_dimension_tables.sql
+|  |__populate_fact_table.sql
+|  |__create_views.sql
+|  |__views_screenshots
+|  |__create_reusable_queries.sql
+|  |__reusable_queries_screenshots
+|__powerbi/
+|  |__ACESuperstore_Dashboard.pbix
+|  |__dashboard_screenshots/
+|  |__schema_diagram.png
+|__README.md
+```
+
 
