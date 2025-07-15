@@ -214,7 +214,7 @@ select *
 from sales_fact;
 ```
 ## Dimension Tables Population
-[Dimension Tables Population](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/ba6ad15eef4d29e151ee9ab79a7d97f782c8c4b9/Carlton_Francis_population%20of%20fact%20and%20dim%20table%20screenshots)
+[Dimension Tables Deduplication and Population Queries](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/ba6ad15eef4d29e151ee9ab79a7d97f782c8c4b9/Carlton_Francis_population%20of%20fact%20and%20dim%20table%20screenshots)
 # Views and Reusable Query Creation
 ## Views Creation
 The view tables that were created speaks to the following insights that will be highlighted within the upcoming visualizations:
@@ -223,7 +223,97 @@ The view tables that were created speaks to the following insights that will be 
 3.	vw_customer_order_patterns: Average order value, frequency, and profit per customer segment
 4.	vw_channel_margin_report: Profitability comparison across online vs in-store
 5.	vw_region_category_rankings: Rank categories by profit margin per region
-[Views Creation Queries](
+[Views Creation Queries](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/5d9b68205d4d73f96f61b92ef508bd869edc12be/Carlton_Francis_created%20views%20screenshots)
+See the following codes:
+```
+-- Creating vw_channel_margin_report
+create view vw_channel_margin_report as
+select 
+	channel_dim.order_mode as purchase_channel,
+	date_dim.year as order_date,
+	sales_fact.profit_perunit as profit,
+	sales_fact.profit_margin as profit_margin
+from sales_fact
+left join channel_dim on sales_fact.order_mode = channel_dim.order_mode
+left join date_dim on sales_fact.date = date_dim.date
+
+select *
+from vw_channel_margin_report;
+
+-- Creating vw_customer_order_patterns view
+create view vw_customer_order_patterns as 
+select customer_dim.customer_id, product_dim.segment,
+	sales_fact.total_cost as order_value, 
+	sales_fact.total_sales as total_sales, 
+	sales_fact.total_revenue as total_revenue,
+	sales_fact.profit_perunit as profit,
+	count(sales_fact.date) as order_frequency
+from sales_fact
+left join customer_dim on sales_fact.customer_id = customer_dim.customer_id
+left join product_dim on sales_fact.product_id = product_dim.product_id
+group by customer_dim.customer_id, product_dim.segment, order_value, total_sales, total_revenue, profit;
+
+select *
+from vw_customer_order_patterns;
+
+-- creating vw_discount_impact_analysis view
+create view vw_discount_impact_analysis as 
+SELECT 
+    product_dim.product_name,
+	product_dim.category,
+	product_dim.sub_category,
+    sales_fact.total_discount AS discounts,
+	sales_fact.profit_perunit AS profit,
+	sales_fact.profit_margin AS profit_margin
+FROM sales_fact
+LEFT JOIN product_dim ON sales_fact.product_id = product_dim.product_id;
+
+select *
+from vw_discount_impact_analysis;
+
+-- creation of product_seasonality view
+create view vw_product_seasonality as
+select product_dim.product_name, date_dim.year, date_dim.quarter, date_dim.month, date_dim.day, 
+		product_dim.total_cost as Cost_Total,
+		sales_fact.total_sales as Sales_Total,
+		sales_fact.total_revenue as Revenue_Total,
+		sales_fact.profit_perunit as Unit_Profit,
+		sales_fact.gross_profit_perunit as Unit_Gross_Profit
+from sales_fact
+join date_dim on sales_fact.date = date_dim.date
+join product_dim on sales_fact.product_id = product_dim.product_id
+
+select*
+from vw_product_seasonality;
+
+-- Creating vw_region_category_rankings view
+create view vw_region_category_rankings as
+select 
+	product_dim.category,
+	location_dim.region,
+	sales_fact.profit_margin as profit_margin,
+	rank() over (
+		partition by location_dim.region 
+		order by sales_fact.profit_margin desc
+		)as ranking
+from sales_fact
+left join product_dim on sales_fact.product_id = product_dim.product_id
+left join location_dim on sales_fact.postal_code = location_dim.postal_code
+where profit_margin is not null
+order by ranking asc
+
+select *
+from vw_region_category_rankings;
+```
+## Reusable Queries
+
+
+
+
+
+
+
+
 
 
 
