@@ -24,7 +24,7 @@ RDAMP-Dimensional-Model-PowerBI/
 |  |__schema_diagram.png
 |__README.md
 ```
-#:tool:Tools Used for Project
+# :tool: Tools Used for Project
 
 
 
