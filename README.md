@@ -306,7 +306,10 @@ select *
 from vw_region_category_rankings;
 ```
 ## Reusable Queries
-
+This project includes 5 reusable SQL queries (outside of view) that:
+-	Joins fact and dimensional tables
+-	Returns strategic business insights
+[Overall discount by channel by year by quarter](
 
 
 
