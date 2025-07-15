@@ -320,7 +320,7 @@ This project includes 5 reusable SQL queries (outside of view) that:
 2.	Generated dashboards by utlilizing information from fact and dimension tables via star schema relationship
 -	[Explore Power BI Dashboard for Insights](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/7e2da2174c01c2527a463feaf017257776f51243/Carlton_Francis_Dimensional%20Modeling-SQL%20Transformation-Power%20BI-Reporting.pbix)
 ## Power BI Visualization Screenshots
-- ![Produ(ct seasonality trends and profit versus discount correlation]
+- ![Produ(ct seasonality trends and profit versus discount correlation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/1d083e016686ef52e3bc079be0f309f3514fd3fe/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Power%20BI%20insight%201.png)
 - ![Profit contributors, category ranking by profit margin and region, and value of order by channel and segment](
 - ![Order count by year and quarter](
 - ![Discounts by channel, year, and quareter](
