@@ -172,7 +172,7 @@ foreign key (Postal_Code) references Location_Dim(Postal_Code)
 ```
 # Table Population
 ## Sale Fact Table Population
-[Sales Fact Table Population](
+[Sales Fact Table Population](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/2af687316a475c99ab54d5d97c9b717ad6a47eba/Carlton_Francis_population%20of%20fact%20and%20dim%20table%20screenshots/Insert%20into%20sale_fact%20table.png)
 See the following code used for population:
 ```
 -- Insertion of data into sales_fact table
@@ -212,6 +212,10 @@ select
 from sales_staging;
 select *
 from sales_fact;
+```
+## Dimension Tables Population
+[Dimension Tables Population](
+
 
 
 
