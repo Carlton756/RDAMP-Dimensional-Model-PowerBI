@@ -324,7 +324,7 @@ This project includes 5 reusable SQL queries (outside of view) that:
 - ![Profit contributors, category ranking by profit margin and region, and value of order by channel and segment](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/60c2fbdf35613fe309c28dd26630912109d0a450/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Power%20BI%20insight%202.png)
 - ![Order count by year and quarter](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/63c164967f8fb3458424ecb1eda80a5a9a72496d/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Power%20BI%20insight%203.png)
 - ![Discounts by channel, year, and quareter](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/e8b2726d33e078d16b64ea6934cabc16856ee35f/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Reusable%20query%20insight%201.png)
-- ![Top 10 revenue influencers by product and overall gross profit by channel](
+- ![Top 10 revenue influencers by product and overall gross profit by channel](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/aef1cf16ff84d93ef3abfe612ec238fefa783c85/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Reusable%20query%20insight%202.png)
 
 
 
