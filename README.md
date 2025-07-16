@@ -361,15 +361,17 @@ This project includes 5 reusable SQL queries (outside of view) that:
 ## Insight 2
 - East Midlands ranked number 1 in profit margin by region for every category of product with Wales ranked 12th out of the 12 regions for many of the product categories in relation to profit margin
 - Food (3596 GBP) ranked 1st in profit margin by category with Grooming (1 GBP) ranked at the bottom
-- Accessories had the highest order frequency at 287 while bicycles had the highest average order value
-- Customer MN066756 had the highest order frequency of 10 orders and the company acquired the highest profit from the same customer
+- Kitchen had the highest order frequency at 896 orders, while bicycles had the highest average order value of 3410 GBP
+- Customer BY044939 had the highest order frequency of 16 orders
+- Customer FN076092 had the highest order value at 17119 GBP with a profit of 540.99 GBP
 ### Recommendations
 - Promote higher margin products like food and bicycles in underperforming regions like Wales
 - Seek to combine high order frequency products with high margin products to improve profit figures
 - Implement customer appreciation programs that target valuable customers that make frequent purchases
 ## Insight 3
-- The was an increase in the number of products ordered in 2024 (5231 products)compared to 2023 (4356 products) - 20% increase. This trend was also reflected in quarter figures
+- There was an increase in the number of products ordered in 2024 (5231 products)compared to 2023 (4356 products) - 20% increase. This trend was also reflected in quarter figures
 - I would like to highlight that while cleaning the initial dataset, I removed 42 rows of records that had negative cost price values. This would have drastically affected my analysis. I would venture to ascertain from the business the reason for the negative values and then reincorporate these records for future analysis
+- There was an equal split as it relates to average order value across each order channel with a value of 289 GBP
 ### Recommendations
 - Examine areas that contributed to increase in product orders and increase promotional support
 - Apply ML techniques to perform predictive algorithms on specific areas of sales. This method would assist ACE in forcasting future growth
