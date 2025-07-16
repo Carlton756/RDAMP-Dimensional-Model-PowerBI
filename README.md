@@ -245,7 +245,7 @@ The view tables that were created speaks to the following insights that will be 
 3.	vw_customer_order_patterns: Average order value, frequency, and profit per customer segment
 4.	vw_channel_margin_report: Profitability comparison across online vs in-store
 5.	vw_region_category_rankings: Rank categories by profit margin per region
--	[Views Creation Queries](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/4276e8078f53c870398884d51755615cf1c81227/Carlton_Francis_created%20views%20screenshots)
+-	[Views Creation Queries](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/tree/044d88c611d9b2f36f17d4010ce8b32ae7a0dbfa/Carlton_Francis_created%20views%20screenshots)
 #### See the following codes:
 ```
 -- Creating vw_channel_margin_report
