@@ -350,10 +350,10 @@ This project includes 5 reusable SQL queries (outside of view) that:
 - ![Top 10 revenue influencers by product and overall gross profit by channel](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/aef1cf16ff84d93ef3abfe612ec238fefa783c85/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Reusable%20query%20insight%202.png)
 # Summary of insights and Recommendations
 ## Insight 1
-- Total profit generated per Unit = 196.80K GBP
+- Total profit generated = 2.08M GBP
 - Total sales generated = 293.87K GBP
 - Total revenue generated = 3.10M GBP
-- Profit and discount correlation revealed a steady decline in profit as discount decreased with only one major outlier. The outlier identified was when discount was 0, there was a large value in the profit (18592 GBP) acquired by the company.
+- Profit and discount correlation revealed a steady decline in profit as discount decreased with only one major outlier. The outlier identified was when discount was 0, there was a large value in the profit (201787 GBP) acquired by the company.
 - Product and seasonality figures revealed that products such as compact dishwashers, electric bikes and portable solar generators sold very when and generated high revenue and profit gain which increased in 2024 when compared to 2023.
 ### Recommendations
 - The accumulated sum of discounts generated a higher profit value overall than that of the profit acquired as a result of 0 discount. ACE should continue to implement their discount system and even find ways to improve the system as coustomers value discounts.
