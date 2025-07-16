@@ -284,9 +284,9 @@ SELECT
     product_dim.product_name,
 	product_dim.category,
 	product_dim.sub_category,
-    sales_fact.total_discount AS discounts,
-	sales_fact.profit_perunit AS profit,
-	sales_fact.profit_margin AS profit_margin
+    	sales_fact.total_discount AS discounts,
+	sales_fact.profit_perunit * sales_fact.total_units_sold AS total_profit,
+	sales_fact.profit_margin * sales_fact.total_units_sold AS total_profit_margin
 FROM sales_fact
 LEFT JOIN product_dim ON sales_fact.product_id = product_dim.product_id;
 
