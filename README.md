@@ -344,7 +344,7 @@ This project includes 5 reusable SQL queries (outside of view) that:
 -	[Explore Power BI Dashboard for Insights](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/7e2da2174c01c2527a463feaf017257776f51243/Carlton_Francis_Dimensional%20Modeling-SQL%20Transformation-Power%20BI-Reporting.pbix)
 ## Power BI Visualization Screenshots
 - ![Product seasonality trends and profit versus discount correlation](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/ba4f3d0851b151af7541e09f7fcaf638592546b9/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Power%20BI%20insight%201.png)
-- ![Insights into customer order patterns and order value by channel and segment](
+- ![Insights into customer order patterns and order value by channel and segment](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/5818b6c0ffff467416add21717a8f2bf18234e7f/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Power%20BI%20insight%202.png)
 - ![Order count by year and quarter and AOV by channel insights](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/c880b86641adf104636601066e4f4e1da33b65c3/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Power%20BI%20insight%203.png)
 - ![Discounts by channel, year, and quareter](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/e8b2726d33e078d16b64ea6934cabc16856ee35f/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Reusable%20query%20insight%201.png)
 - ![Top 10 revenue influencers by product and overall gross profit by channel](https://github.com/Carlton756/RDAMP-Dimensional-Model-PowerBI/blob/aef1cf16ff84d93ef3abfe612ec238fefa783c85/Carlton_Francis_PowerBI%20Dashboard%20screenshots/Reusable%20query%20insight%202.png)
